@@ -24,6 +24,9 @@
                 <form method="POST" action="/chats/<%= chat._id %>?_method=DELETE" onsubmit="return confirmDelete()">
                     <button type="submit" class="delete-btn">Delete</button>
                 </form>
+                <form action="/chats/<%= chat._id %>" method="GET">
+                    <button>Show</button>
+                </form>
             </div>
             <p>Received by <b><i><%=chat.to%></i></b></p>
             <hr>
